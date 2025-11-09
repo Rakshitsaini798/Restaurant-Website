@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background-image: url('/W.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 60px;
+      font-weight: 50;
+      letter-spacing: 35px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column; 
+      gap: 40px; 
+      width: 100%;
+      max-width: 900px;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.5); 
+      border-radius: 25px; 
+      padding: 40px 30px;
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7); /*shadow banegi dabbe me*/
+    }
+
+    .card h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+      font-weight: 10;
+      letter-spacing: 5px;
+    }
+
+    .card p, .card a {
+      font-size: 25px;
+      line-height: 1.5;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+
+    
+
+
+
+    .card a {
+  position: relative;
+  color: #ffffff;           
+  text-decoration: none;   
+  transition: color 0.3s ease; 
+}
+
+.card a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;             
+  background-color: #FFD700; 
+  transition: width 0.3s ease;
+}
+
+.card a:hover::after {
+  width: 100%;             
+}
+
+.card a:hover {
+  color: #FFD700;  }        
+</style>
+
+</head>
+<body>
+    <div class="cards">
+    <h1>Contact Us</h1>
+
+    
+    <div class="card">
+      <h2>Address</h2>
+      <p>
+        <a href="https://www.google.com/maps?q=21+Rue+de+l%27%C3%89clat,+75001+Paris,+France" target="_blank">
+          21 Rue de l’Éclat,<br>75001 Paris, France
+        </a>
+      </p>
+    </div>
+    <div class="card">
+      <h2>Phone</h2>
+      <p>General: +33 1 02 03 04 05</p>
+      <p>Events / Private Dining: +33 1 09 08 07 06</p>
+    </div>
+
+    <div class="card">
+      <h2>Email</h2>
+      <p>General inquiries: info@eclat-noir.example</p>
+      <p>Private events: events@eclat-noir.example</p>
+    </div>
+
+
+
+    <div class="card">
+      <h2>Contact Person</h2>
+      <p>Name: Rakshit Saini</p>
+      <p>Role: Owner & Creative Director</p>
+      <p>Email: rakshitsaini256@gmail.com</p>
+      <p><a href="https://github.com/Rakshitsaini798" target="_blank">GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/rakshit-saini-301a04373/" target="_blank">LinkedIn</a></p>
+    </div>
+    
+</body>
+</html>

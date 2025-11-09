@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Background */
+body {
+  background-image: url('/GG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Full page wrapper */
+.reservation-page-wrapper {
+  display: flex;
+  justify-content: space-between; /* left text left, box right */
+  align-items: center;            /* vertical center */
+  width: 100vw;
+  height: 100vh;                  /* full viewport height */
+  padding: 0 50px;                /* space from edges */
+  box-sizing: border-box;
+}
+
+/* Left text column */
+.left-text {
+  max-width: 40%;
+}
+
+.left-text h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  margin-top: 350px;
+  margin-left: 30px;
+}
+
+.left-text p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #fff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: 100;
+font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  margin-left: 30px;
+}
+
+/* Reservation box (right column) */
+.reservation-container {
+  background: rgba(0,0,0,0.5);
+  padding: 80px 60px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px; /* fixed max width */
+  text-align: center;
+  margin: 0; /* remove any previous margin-left */
+  margin-top: 10px;
+}
+
+
+.reservation-container h1{margin-bottom: 30px;
+font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+}
+
+.reservation-container p{margin-bottom: 0px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: 200;
+font-size: 1.25rem;
+  letter-spacing: 0px;}
+
+.reservation-container form{margin-top: 50px;}
+
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background: #c59d5f;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #e6c28f;
+}
+
+
+
+</style>
+<body>
+
+
+    <div class="reservation-page-wrapper">
+  <!-- Left text column -->
+  <div class="left-text">
+    <h1>VOTRE TABLE VOUS ATTEND</h1>
+    <p>Step into a world where every moment is crafted, every sense indulged, and luxury is yours to savor.</p>
+  </div>
+
+  <!-- Right reservation box (existing code) -->
+  <div class="reservation-container">
+    <h1>Reserve a Table</h1>
+    <p>Experience fine dining at its best. Book your table now.</p>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="date" required>
+      <input type="time" required>
+      <select required>
+        <option value="">Number of Guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+        <option value="7">7 Guests</option>
+        <option value="8">8 Guests</option>
+        <option value="9">9 Guests</option>
+        <option value="10">10 Guests</option>
+        <option value="11">11 Guests</option>
+        <option value="12">12 Guests</option>
+        <option value="13">13 Guests</option>
+        <option value="14">14 Guests</option>
+        <option value="15">15 Guests</option>
+      </select>
+      <textarea placeholder="Special Requests (optional)" rows="3"></textarea>
+      <input type="submit" value="Submit request">
+    </form>
+  </div>
+</div>
+
+    
+</body>
+</html>

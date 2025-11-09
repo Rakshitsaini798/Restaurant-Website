@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉCLAT NOIR</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{height:100vh;
+    background-image: url(/HDBACK.jpeg);
+    background-size: cover;
+    overflow: hidden;}
+
+
+    html{overflow: hidden;}
+    p{
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9c5c5;
+  margin-top: 0.3rem; /* space between heading and line */
+  font-family: 'Playfair Display', serif;
+  margin-top: 0%;
+}
+
+
+
+
+ h1{font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+  font-size: 90px;
+  margin-bottom: 0.2rem;
+  margin-top:  120px;
+}
+
+
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* vertical separator lines */
+.navbar li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1.2em;
+  background-color: #FFD700;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  transition: color 0.5 ease;
+}
+
+/* hover color */
+.navbar a:hover {
+  color: #FFD700;
+}
+
+/* remove circular border around “Reservation” */
+.navbar .mango {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</style>
+<body>
+    <h1 align="center">ÉCLAT NOIR</h1>
+
+    <P align="center">Where elegance whispers in every detail</P>
+
+    <ul class="navbar">
+        <li><a href="/ABOUTUS.HTML">About us</a></li>
+        <li><a href="/CONTACTUS.html">Contact</a></li>
+        <li><a href="/reservation.html">Reservation</a></li>
+        
+    </ul>
+
+
+    
+</body>
+</html>
